@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 10 and 11</title>
+  <link rel="stylesheet" href="./styles/bootstrap.min.css">
+</head>
+<body>
+  <h2 class="h4 py-5 text-center"><< -- Birinchi vazifa Masofani bosib o'tishdagi vaqtni topish! -- >></h2>
+
+  <!-- First Work -->
+  <div class="distance w-50 d-flex mx-auto">
+    <form class="distance-form w-50 mx-auto bg-light p-5">
+      <label for="distance" class="form-label">Masofani kiriting</label>
+
+      <input class="distance-input form-control w-75" type="number" id="distance" placeholder="1234">
+
+      <span class="opacity-75">Kiritayotgan masofangiz kilometrda</span>
+
+      <button class="btn bg-danger mt-3 mx-auto" type="submit">Tekshirish</button>
+    </form>
+
+    <div class="bg-warning w-50">
+      <p class="out-pedestrian"></p>
+      
+      <p class="out-cyclist"></p>
+
+      <p class="out-car"></p>
+
+      <p class="out-train"></p>
+    </div>
+  </div>
+
+  <h2 class="h4 py-5 text-center"><< -- Ikkinchi vazifa Bozorlik ro'yxatini optimallashtirish! -- >></h2>
+
+  <!-- Second Work -->
+  <div class="market w-50 bg-light mx-auto p-5">
+    <form class="market-form d-flex justify-content-between align-items-center" method="POST">
+      <label class="opacity-75" for="kerakli-mahsulot">Kerakli mahsulotni kiriting!</label>
+
+      <input class="market-input form-control w-50" type="text" id="kerakli-mahsulot" placeholder="Mahsulot nomini kiriting" autocomplete="off">
+
+      <button class="btn text-bg-info" type="submit">Qo'shish</button>
+    </form>
+
+    <ol class="market-list"></ol>
+  </div>
+
+  <h2 class="h4 py-5 text-center"><< -- Uchinchi vazifa Temperatura o'lchovlarini aniqlash! -- >></h2>
+
+  <div class="temperature w-50 bg-light mx-auto p-5">
+    <form class="temperature-form d-flex justify-content-between align-items-center flex-wrap" method="POST">
+      <label class="opacity-75" for="kerakli-mahsulot">Kerak bo'lgan temperaturani kiriting!</label>
+
+      <select class="temperature-select" id="cars" name="carlist" form="carform">
+        <option disabled>Kiritayotgan o'lchov turini tanlang!</option>
+        <option value="celciy">Celciy</option>
+        <option value="farangety">Farangety</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+
+      <input class="temperature-input form-control w-50 mt-5" type="number" id="kerakli-mahsulot" placeholder="1234" autocomplete="off">
+
+      <button class="btn text-bg-info mt-5" type="submit">Ishga tushurish</button>
+    </form>
+
+    <output class="temperature-list-celciy mt-5"></output>
+    <br><br>
+    <output class="temperature-list-kelvin"></output>
+    <br><br>
+    <output class="temperature-list-farangeyt"></output>
+  </div>
+
+  <h2 class="h4 py-5 text-center"><< -- To'rtinchi vazifa Yugurishga chiqish rejasi! -- >></h2>
+
+  <div class="run w-50 bg-light mx-auto p-5 mb-5">
+    <form class="run-form mb-3 position-relative">
+      <label class="run-label opacity-75" for="runDay">Kunning haroratini kiriting!</label>
+
+      <input class="run-input  w-50 form-control position-absolute top-0 end-0" type="number" id="runDay" placeholder="1234" required autocomplete="off">
+
+      <div class="run-form-checkbox row mt-4">
+        <label class="form-rain-label col" for="raining">
+          <input class="form-run-input me-2" type="checkbox" value="" id="raining">
+          <b>Bugun yog'ingarchilik bo'lyabdimi ?</b>
+        </label>
+        
+        <label class="form-hall-label col" for="sportHall">
+          <input class="form-hall-input me-2" type="checkbox" value="" id="sportHall">
+          <b>Sport zal ochiqmi ?</b>
+        </label>
+      </div>
+
+      <button class="btn mt-4 bg-success" type="submit">Tekshirish</button>
+    </form>
+
+    <output class="run-out"></output>
+  </div>
+
+
+
+
+  <script src="./javascript/script.js"></script>
+</body>
+</html>
