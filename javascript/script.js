@@ -195,9 +195,6 @@ elRunForm.addEventListener('submit', function(evt) {
   elRunOut.classList.add(alertInfo);
 
   elRunInput.value = "";
-  function uncheck () {
-    runRainCheck = false;
-    runHallCheck = false;
-  }
-  uncheck();
+  elRunRainCheck.checked = 0;
+  elRunHallCheck.checked = 0;
 })
